@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+
+}
+td img {
+    width: 40px;
+    height: 40px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.table_header{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+body {
+    background: url(images/html_table.jpg) center / cover; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+main.table {
+    height: 90vh;
+    width: 82%;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: .8rem 1rem;
+    border-radius:  .8rem;
+    overflow: hidden;
+}
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+}
+.table_body  {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+   margin: .8rem auto;
+   border-radius: .6rem; 
+   overflow: auto;
+}
+
+thead th {
+    position: sticky;
+    background-color: #d5d1defe;
+    left: 0;
+    top: 0;
+}
+table {
+    width: 100%;
+}
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+tbody tr:hover {
+    background-color: #fff6;
+}
+.status {
+   border-radius: 2rem;
+   padding: .4rem 0;
+   background-color: red;
+   text-align: center;
+}
+.status.delivered {
+    background-color: #86e49d;
+    color: green;
+}
+.status.shipped {
+    background-color: #6fcaea;
+}
+.status.pending {
+    background-color: brown;
+}
+.status.cancelled {
+    background-color:red;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    height: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+    .table_body:hover::-webkit-scrollbar-thumb {
+       visibility: visible;
+    }
